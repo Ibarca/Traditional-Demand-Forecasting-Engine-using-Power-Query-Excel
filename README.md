@@ -229,9 +229,9 @@ After forecasts are generated, Power Query consolidates all forecasting outputs 
 
 | SKU    | Forecast Month | Forecast Quantity |
 | ------ | -------------- | ----------------- |
-| 100013 | Jan-2026       | 245               |
-| 100013 | Feb-2026       | 268               |
-| 100013 | Mar-2026       | 302               |
+| 100000 | Jan-2026       | 245               |
+| 100000 | Feb-2026       | 268               |
+| 100000 | Mar-2026       | 302               |
 
 This dataset can be used directly for:
 
