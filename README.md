@@ -40,16 +40,26 @@ Instead of using a one-size-fits-all approach, I designed a segmentation-driven 
 
 ## Data Sources
 
-The forecasting workflow combines multiple data sources:
+The forecasting framework combines multiple data sources to create a more accurate view of product demand and support automated forecast generation.
 
-* 24 months of sales history
-* SKU stockout reports
-* Product master data
-* Product cost information
-* Rolling forecast calendar
-* Product classification tables
+### Sales History
+A rolling 24-month history of SKU-level sales serves as the primary demand signal. This data is used to identify trends, seasonality, demand variability, and calculate forecasts.
 
-Power Query automates the extraction, transformation, and consolidation of all data sources into a standardized forecasting dataset.
+### SKU Gap Report
+Provides information about stockout periods. Since low sales during stockouts do not reflect true customer demand, this data is used to identify and exclude periods where demand was artificially constrained by inventory shortages.
+
+### SKU Details Report
+Contains product attributes such as cost, status, and sales metrics. It is used to filter non-replenishable products, calculate product importance, and support product classification.
+
+### Rolling Forecast Calendar
+Defines the future periods that require forecasting. The calendar automatically updates every month, ensuring forecasts are always generated for the next planning horizon.
+
+### Forecast Type Classification
+Maps each SKU to a forecasting method based on its demand characteristics, lifecycle stage, seasonality, and business rules. This allows different forecasting techniques to be applied to different product segments.
+
+### Why These Sources Matter
+
+By combining historical demand, stock availability, product attributes, and classification rules, the forecasting process can distinguish between genuine demand patterns and operational distortions, resulting in more reliable forecasts and better inventory planning decisions.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/Ibarca/Traditional-Demand-Forecasting-Engine-using-Power-Query-Excel/c73a2f9878da8b92d7786aab3bab5baa028b8908/Images/Image%2001.06.26%20at%2017.05.jpeg" width="800">
