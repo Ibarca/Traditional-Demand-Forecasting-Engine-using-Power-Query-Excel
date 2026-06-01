@@ -65,7 +65,7 @@ The forecasting framework combines multiple data sources to create a more accura
 ### Sales History
 A rolling 24-month history of SKU-level sales serves as the primary demand signal. This data is used to identify trends, seasonality, demand variability, and calculate forecasts.
 
-### SKU Gap Report
+### SKU Inventory Gap Report
 Provides information about stockout periods. Since low sales during stockouts do not reflect true customer demand, this data is used to identify and exclude periods where demand was artificially constrained by inventory shortages.
 
 ### SKU Details Report
@@ -133,9 +133,9 @@ Products are classified based on their sales age:
 
 Products below a configurable sales threshold receive a dedicated forecasting approach.
 
-### Seasonal Classification
+### Extreme Seasonal Classification
 
-Products with strong seasonal demand patterns are managed separately.
+Products with strong seasonal demand patterns are managed separately. These are productes whose demand drops to zero in low season but suddenly increases when high season beginns
 
 The final classification determines which forecasting method will be applied.
 
