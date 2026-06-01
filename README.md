@@ -106,6 +106,13 @@ These preprocessing steps ensure forecasts are based on realistic demand pattern
 
 A key part of the solution is classifying products according to their demand characteristics.
 
+Not all products behave the same way, so using a single forecasting method across an entire catalog often produces inaccurate results. A new product, a seasonal item, and a low-selling SKU each have different demand patterns and forecasting needs.
+
+By classifying products based on factors such as demand variability, lifecycle stage, seasonality, and business importance, the framework can assign the most suitable forecasting method to each product group. This segmentation improves forecast accuracy and creates a more reliable foundation for inventory planning and purchasing decisions.
+
+Products are classified as follows:
+
+
 ### ABC Analysis
 
 Products are classified based on their contribution to annual COGS:
