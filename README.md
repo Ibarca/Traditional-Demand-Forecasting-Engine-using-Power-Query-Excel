@@ -51,8 +51,9 @@ The forecasting workflow combines multiple data sources:
 
 Power Query automates the extraction, transformation, and consolidation of all data sources into a standardized forecasting dataset.
 
-<img src="https://raw.githubusercontent.com/Ibarca/Traditional-Demand-Forecasting-Engine-using-Power-Query-Excel/c73a2f9878da8b92d7786aab3bab5baa028b8908/Images/Image%2001.06.26%20at%2017.05.jpeg" width="800">
-
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Ibarca/Traditional-Demand-Forecasting-Engine-using-Power-Query-Excel/c73a2f9878da8b92d7786aab3bab5baa028b8908/Images/Image%2001.06.26%20at%2017.05.jpeg" width="800">
+</p>
 ---
 
 ## Data Preparation
